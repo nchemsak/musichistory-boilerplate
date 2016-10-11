@@ -1,13 +1,125 @@
 <!doctype html>
+<html>
 
-<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
+	<div id="wrapper">
+		<div class="top">
+			View music |
+			<a href="#">Add Music</a> |
+			<a href="#">Profile</a>
+		</div>
 
+<!-- left -->
+			<div class="options">
+				<form>
+					<label for="slide">Song length:</label><br>
+						<input id="slide" type="range" name="points" min="0" max="10">
+						<div class="space">
+							<label>Artist:</label><br>
+							<select class="dropdown" id="artist" name="artist" img src="images/drop-down-arrow.png">
+								<option>Options</option>
+								<option>Puscifer</option>
+								<option>Radiohead</option>
+								<option>Deftones</option>
+								<option>Beck</option>
+								<option>Led Zeppelin</option>
+							</select><br>
+						</div>
+						<div class="space">
+							<label>Album:</label><br>
+							<select class="dropdown" id="album" name="album">
+								<option>Options</option>
+								<option>Money Shot</option>
+								<option>Kid A</option>
+								<option>White Pony</option>
+								<option>Sea Change</option>
+								<option>Led Zeppelin IV</option>
+							</select><br>
+						</div>
+				<div class="space">
+					<label>Genre:</label>
+					<ul>
+						<li><input class ="genre" type="checkbox" id="rock" name="genre">
+							<label for="rock">Rock</label>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="Pop" name="genre">
+							<label for="Pop">Pop</label>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="Blues" name="genre">
+							<label for="Blues">Blues</label><br>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="Classical" name="genre">
+							<label for="Classical">Classical</label><br>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="Jazz" name="genre">
+							<label for="Jazz">Jazz</label><br>
+						</li>
+						<li>
+						<input class="genre" type="checkbox" id="Hip hop" name="genre">
+							<label for="Hip hop">Hip hop</label><br>
+						</li>
+					</ul>
+				</div>
 
+<!-- button -->
+				<p>
+				<br>
+					<button type="submit" >Filter</button>
+				</p>
+				</form>				
+			</div>
+
+<!-- right song names -->
+			<div class="songs">
+
+				<h4 class="songchoices">Grand Canyon</h4>
+				<ul>
+					<li class="songnamefloat">Puscifer</li> 
+					<li class="songnamefloat">|</li>
+					<li class="songnamefloat">Money Shot</li> 
+					<li class="songnamefloat">|</li>
+
+					<li class="songnamefloat">Rock </li> 
+				</ul>
+
+				<h4 class="songchoices">Passenger</h4>
+				<ul>
+					<li class="songnamefloat">Deftones </li> 
+					<li class="songnamefloat">|</li>
+					<li class="songnamefloat">White Pony </li> 
+					<li class="songnamefloat">|</li>
+					<li class="songnamefloat">Rock</li> 
+				</ul>
+
+				<h4 class="songchoices">The Golden Age</h4>
+				<ul>
+					<li class="songnamefloat">Beck </li> 
+					<li class="songnamefloat">|</li>
+					<li class="songnamefloat">Sea Change</li> 
+					<li class="songnamefloat">|</li>
+					<li class="songnamefloat">Rock</li> 
+				</ul>
+
+				<h4 class="songchoices">Everything in its Right Place</h4>
+				<ul>
+					<li class="songnamefloat">Radiohead</li> 
+					<li class="songnamefloat">|</li>
+					<li class="songnamefloat">Kid A</li> 
+					<li class="songnamefloat">|</li>
+					<li class="songnamefloat">Rock</li> 
+				</ul>
+
+			</div>
+		</div>
 </body>
 </html>
