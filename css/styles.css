@@ -19,7 +19,7 @@ html {
 	border: 3px solid black;
 	padding: 19px;
 	/*width: auto;*/
-	margin: 25px 90px 15px 90px;	
+	margin: 25px 90px 15px 90px;
 }
 
 .options, .songs {
@@ -83,7 +83,7 @@ button {
 /************* DROPDOWN STYLES ***************/
 
 select.dropdown {
- -webkit-appearance: none;  
+ -webkit-appearance: none;
  border: 3px solid black;
  color: black;
  border-radius: 5px;
@@ -92,7 +92,7 @@ select.dropdown {
  width: 90%;
  cursor: pointer;
  background: white url(/images/drop-down-arrow.png) no-repeat right center;
- background-size: 28px 37px; 
+ background-size: 28px 37px;
  background-border: 3px;
 }
 
@@ -100,7 +100,7 @@ select.dropdown {
 /************* CHECKBOX STYLES ***************/
 
 .genre {
-	-webkit-appearance: none;  
+	-webkit-appearance: none;
 	width: 18px;
 	height: 18px;
  	border: 3px solid black;
@@ -130,24 +130,28 @@ ul {
   column-count: 2;
   margin-left: -2em;
   margin-top: .1em;
+
+
 }
 
-li { 
+li {
 	list-style: none;
 	font-size: .9em;
 	/*background-color: red;*/
   height: 32px;
   float: left;
   margin-left: -.2em;
+
+
 }
 
 
 /************* SLIDER STYLES ***************/
 
 input[type=range] {
-  -webkit-appearance: none; 
-  width: 90%; 
-  background: transparent; 
+  -webkit-appearance: none;
+  width: 90%;
+  background: transparent;
   outline: none;
 }
 
@@ -157,7 +161,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 #slide::-webkit-slider-runnable-track {
-	-webkit-appearance: none;  
+	-webkit-appearance: none;
   height: 12px;
   cursor: pointer;
   background: lightgrey;
@@ -171,12 +175,33 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -8px;
  	border: 3px solid black;
   cursor: pointer;
-  border-radius: 50px;	
+  border-radius: 50px;
   background: white;
 }
 
 
 
+/*styles taken from the Readme file*/
+
+/*ul > li {
+  display: inline;
+  list-style-type: none;*/
+  /*margin: 5px 15px 0 15px;*/
+  /*background-color: goldenrod;*/
+  /*padding: 5px;*/
+/*}*/
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/*body {
+  font-size: 2em;
+}*/
 
 
 
