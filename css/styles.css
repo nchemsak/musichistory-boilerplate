@@ -81,6 +81,7 @@ button {
   width: 115px;
   letter-spacing: -.03em;
   margin-left: 44px;
+  margin-bottom: 15px;
 }
 
 button:hover {
@@ -202,21 +203,12 @@ a:active {
 
 /*styles taken from the Readme file*/
 
-
 /*ul > li {
   display: inline;
   list-style-type: none;*/
-
-
 /*margin: 5px 15px 0 15px;*/
-
-
 /*background-color: goldenrod;*/
-
-
 /*padding: 5px;*/
-
-
 /*}*/
 
 .visible {
@@ -226,11 +218,6 @@ a:active {
 .hidden {
   display: none;
 }
-
-
-/*body {
-  font-size: 2em;
-}*/
 
 .addForm {
   border: 3px solid black;
