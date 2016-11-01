@@ -10,3 +10,13 @@ addLink.addEventListener("click", function() {
   addView.classList.add("visible");
   addView.classList.remove("hidden");
 });
+
+
+// function add() {
+//   document.getElementById("num1");
+//   var add = (parseFloat(num1.value) + parseFloat(num2.value) );
+//   output.innerHTML = add;
+// }
+
+
+
