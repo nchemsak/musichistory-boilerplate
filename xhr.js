@@ -1,3 +1,4 @@
+'use strict';
 console.log("First line in JS file");
 console.log(Date.now()); //time stamp when page loads
 
