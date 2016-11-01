@@ -12,11 +12,11 @@ addLink.addEventListener("click", function() {
 });
 
 
-// function add() {
-//   document.getElementById("num1");
-//   var add = (parseFloat(num1.value) + parseFloat(num2.value) );
-//   output.innerHTML = add;
-// }
+function add() {
+  document.getElementById("num1");
+  var add = (parseFloat(num1.value) + parseFloat(num2.value) );
+  output.innerHTML = add;
+}
 
 
 

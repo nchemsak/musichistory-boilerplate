@@ -10,135 +10,112 @@
 <body>
   <!-- <section id="home-view"> -->
   <div id="wrapper">
-    <div class="top">
-      <!-- <a href="#" id="link-home">Home</a> -->
-      <a href="#" id="link-list">List Music</a>
-      <a href="#" id="link-add">Add Music</a>
+  <div class="top">
+    <!-- <a href="#" id="link-home">Home</a> -->
+    <a href="#" id="link-list">List Music</a>
+    <a href="#" id="link-add">Add Music</a>
+  </div>
+  <section class="hidden" id="add-view">
+    <div class="addCenter">
+      <input class="addForm" type="text" placeholder="song name">
+      <br>
+      <input class="addForm" type="text" placeholder="artist">
+      <br>
+      <input class="addForm" type="text" placeholder="album">
+      <br>
+      <button id="addButton" type="button">Add</button>
     </div>
-    <section class="hidden" id="add-view">
-      <div class="addCenter">
-        <input class="addForm" type="text" placeholder="song name">
+  </section>
+  <section id="list-view">
+    <!-- left -->
+    <div class="options">
+      <form>
+        <label for="slide">Song length:</label>
         <br>
-        <input class="addForm" type="text" placeholder="artist">
-        <br>
-        <input class="addForm" type="text" placeholder="album">
-        <br>
-        <button id="addButton" type="button">Add</button>
-      </div>
-    </section>
-    <section id="list-view">
-      <!-- left -->
-      <div class="options">
-        <form>
-          <label for="slide">Song length:</label>
+        <input id="slide" type="range" name="points" min="0" max="10">
+        <div class="space">
+          <label>Artist:</label>
           <br>
-          <input id="slide" type="range" name="points" min="0" max="10">
-          <div class="space">
-            <label>Artist:</label>
-            <br>
-            <select class="dropdown" id="artist" name="artist" img src="images/drop-down-arrow.png">
-              <option>Options</option>
-              <option>Puscifer</option>
-              <option>Radiohead</option>
-              <option>Deftones</option>
-              <option>Beck</option>
-              <option>Led Zeppelin</option>
-            </select>
-            <br>
-          </div>
-          <div class="space">
-            <label>Album:</label>
-            <br>
-            <select class="dropdown" id="album" name="album">
-              <option>Options</option>
-              <option>Money Shot</option>
-              <option>Kid A</option>
-              <option>White Pony</option>
-              <option>Sea Change</option>
-              <option>Led Zeppelin IV</option>
-            </select>
-            <br>
-          </div>
-          <div class="space">
-            <label>Genre:</label>
-            <ul>
-              <li>
-                <input class="genre" type="checkbox" id="rock" name="genre">
-                <label for="rock">Rock</label>
-              </li>
-              <li>
-                <input class="genre" type="checkbox" id="Pop" name="genre">
-                <label for="Pop">Pop</label>
-              </li>
-              <li>
-                <input class="genre" type="checkbox" id="Blues" name="genre">
-                <label for="Blues">Blues</label>
-                <br>
-              </li>
-              <li>
-                <input class="genre" type="checkbox" id="Classical" name="genre">
-                <label for="Classical">Classical</label>
-                <br>
-              </li>
-              <li>
-                <input class="genre" type="checkbox" id="Jazz" name="genre">
-                <label for="Jazz">Jazz</label>
-                <br>
-              </li>
-              <li>
-                <input class="genre" type="checkbox" id="Hip hop" name="genre">
-                <label for="Hip hop">Hip hop</label>
-                <br>
-              </li>
-            </ul>
-          </div>
-          <!-- button -->
-          <p>
-            <br>
-            <button type="submit">Filter</button>
-          </p>
-        </form>
-      </div>
-      <!-- right song names -->
-      <div class="songs">
-        <h4 class="songchoices"></h4>
-        <ul>
-          <li class="songnamefloat"></li>
-          <li class="songnamefloat">|</li>
-          <li class="songnamefloat"></li>
-          <li class="songnamefloat">|</li>
-          <li class="songnamefloat"></li>
-        </ul>
-        <h4 class="songchoices"></h4>
-        <ul>
-          <li class="songnamefloat"> </li>
-          <li class="songnamefloat">|</li>
-          <li class="songnamefloat"></li>
-          <li class="songnamefloat">|</li>
-          <li class="songnamefloat"></li>
-        </ul>
-        <h4 class="songchoices"></h4>
-        <ul>
-          <li class="songnamefloat"> </li>
-          <li class="songnamefloat">|</li>
-          <li class="songnamefloat"></li>
-          <li class="songnamefloat">|</li>
-          <li class="songnamefloat"></li>
-        </ul>
-        <h4 class="songchoices"></h4>
-        <ul>
-          <li class="songnamefloat"></li>
-          <li class="songnamefloat">|</li>
-          <li class="songnamefloat"></li>
-          <li class="songnamefloat">|</li>
-          <li class="songnamefloat"></li>
-        </ul>
-      </div>
+          <select class="dropdown" id="artist" name="artist" img src="images/drop-down-arrow.png">
+            <option>Options</option>
+            <option>Puscifer</option>
+            <option>Radiohead</option>
+            <option>Deftones</option>
+            <option>Beck</option>
+            <option>Led Zeppelin</option>
+          </select>
+          <br>
+        </div>
+        <div class="space">
+          <label>Album:</label>
+          <br>
+          <select class="dropdown" id="album" name="album">
+            <option>Options</option>
+            <option>Money Shot</option>
+            <option>Kid A</option>
+            <option>White Pony</option>
+            <option>Sea Change</option>
+            <option>Led Zeppelin IV</option>
+          </select>
+          <br>
+        </div>
+        <div class="space">
+          <label>Genre:</label>
+          <ul>
+            <li>
+              <input class="genre" type="checkbox" id="rock" name="genre">
+              <label for="rock">Rock</label>
+            </li>
+            <li>
+              <input class="genre" type="checkbox" id="Pop" name="genre">
+              <label for="Pop">Pop</label>
+            </li>
+            <li>
+              <input class="genre" type="checkbox" id="Blues" name="genre">
+              <label for="Blues">Blues</label>
+              <br>
+            </li>
+            <li>
+              <input class="genre" type="checkbox" id="Classical" name="genre">
+              <label for="Classical">Classical</label>
+              <br>
+            </li>
+            <li>
+              <input class="genre" type="checkbox" id="Jazz" name="genre">
+              <label for="Jazz">Jazz</label>
+              <br>
+            </li>
+            <li>
+              <input class="genre" type="checkbox" id="Hiphop" name="genre">
+              <label for="Hiphop">Hip hop</label>
+              <br>
+            </li>
+          </ul>
+        </div>
+        <!-- button -->
+        <p>
+          <br>
+          <button type="submit">Filter</button>
+        </p>
+      </form>
+    </div>
+    </section>
+    <!-- right song names -->
+    <!-- <ul> -->
+    <div id="songs"></div>
+
+        <!-- <ul id="messages"></ul> -->
+      <!--      <h4 class="songchoices"></h4>
+          <ul id="songnamefloat1"> -->
+      <!-- <li class="songnamefloat"></li> -->
+      <!-- <div id="songnamefloat" class="row"></div> -->
+      <!-- </ul> -->
+    <!-- </ul> -->
 
 
-
-<!--       <div class="songs">
+    <!--       <div class="songs">
         <h4 class="songchoices">Grand Canyon</h4>
+
         <ul>
           <li class="songnamefloat">Puscifer</li>
           <li class="songnamefloat">|</li>
@@ -171,9 +148,9 @@
           <li class="songnamefloat">Rock</li>
         </ul>
       </div> -->
-  </div>
-  <!-- </section> -->
-  </section>
+    </div>
+    <!-- </section> -->
+
   <script type="text/javascript" src="javascripts/songs.js"></script>
   <!-- <script type="text/javascript" src="javascripts/home.js"></script> -->
   <script type="text/javascript" src="javascripts/list.js"></script>

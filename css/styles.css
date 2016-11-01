@@ -30,6 +30,7 @@ html {
   float: left;
   min-height: 450px;
   max-height: 300px
+
 }
 
 .songnamefloat {
@@ -62,15 +63,18 @@ html {
 
 /************* RIGHT FLOAT STYLES ***************/
 
-.songs {
+#songs {
   background-color: #FEFAC0;
   border: 3px solid black;
   padding-left: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   border: solid 1px #d94ea;
-  line-height: 2px;
+  line-height: 50px;
   margin-left: 15px;
   width: 647px;
+  overflow: scroll;
+  height: 370px;
 }
 
 button {
@@ -128,7 +132,7 @@ select.dropdown {
 .genre:checked:after {
   content: '✔';
   font-size: 1.2em;
-  float: left;
+  /*float: left;*/
 }
 
 h4 {
@@ -205,11 +209,11 @@ a:active {
 
 /*ul > li {
   display: inline;
-  list-style-type: none;*/
-/*margin: 5px 15px 0 15px;*/
-/*background-color: goldenrod;*/
-/*padding: 5px;*/
-/*}*/
+  list-style-type: none;
+margin: 5px 15px 0 15px;
+background-color: goldenrod;
+padding: 5px;
+}*/
 
 .visible {
   display: block;
@@ -234,3 +238,8 @@ div.addCenter {
   margin-right: auto;
   width: 10px;
 }
+
+/*.test {
+  height: 500px;
+  width: 500px;
+}*/
