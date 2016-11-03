@@ -26,10 +26,10 @@ html {
 }
 
 .options,
-.songs {
+#songs {
   float: left;
   min-height: 450px;
-  max-height: 300px
+  max-height: 482px;
 
 }
 
@@ -43,7 +43,7 @@ html {
 }
 
 .songchoices {
-  margin-top: 8%;
+  margin-top: 3%;
 }
 
 
@@ -54,10 +54,12 @@ html {
   border: 3px solid black;
   padding: 10px;
   border: solid 1px #d94ea;
-  line-height: 30px;
+  line-height: 28px;
   margin-left: 90px;
   width: 200px;
   margin-bottom: 25px;
+    min-height: 482px;
+
 }
 
 
@@ -68,7 +70,7 @@ html {
   border: 3px solid black;
   padding-left: 30px;
   padding-bottom: 50px;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   border: solid 1px #d94ea;
   line-height: 50px;
   margin-left: 15px;
@@ -126,7 +128,13 @@ select.dropdown {
   cursor: pointer;
   background-color: white;
   margin-top: 6px;
-  float: left;
+  /*float: left;*/
+    /*column-count: 2;*/
+
+}
+.ulGenreList {
+      column-count: 2;
+
 }
 
 .genre:checked:after {
@@ -139,24 +147,35 @@ h4 {
   font-size: 1.9em;
   font-weight: normal;
   color: #785616;
+  margin: 1px;
 }
 
 
 /************* LIST STYLES ***************/
 
 ul {
-  column-count: 2;
+/*  column-count: 2;*/
   margin-left: -2em;
   margin-top: .1em;
+  margin-bottom: 50px;
 }
 
 li {
   list-style: none;
   font-size: .9em;
   /*background-color: red;*/
-  height: 32px;
-  float: left;
+  /*height: 32px;*/
+  /*float: left;*/
   margin-left: -.2em;
+}
+
+ul > li.stuff {
+  display: inline;
+  list-style-type: none;
+margin: 5px 15px 0 15px;
+/*background-color: goldenrod;*/
+padding: 15px;
+font-size: 1em;
 }
 
 
@@ -207,13 +226,6 @@ a:active {
 
 /*styles taken from the Readme file*/
 
-/*ul > li {
-  display: inline;
-  list-style-type: none;
-margin: 5px 15px 0 15px;
-background-color: goldenrod;
-padding: 5px;
-}*/
 
 .visible {
   display: block;
